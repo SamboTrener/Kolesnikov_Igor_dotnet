@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "hw4", "hw4.fsproj", "{2BD6B190-1BAD-4F6C-BBD3-457D2BE7B904}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "hw4Tests", "hw4Tests\hw4Tests.fsproj", "{C0FB0766-BEA3-498A-8262-CA1F5E4634CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BD6B190-1BAD-4F6C-BBD3-457D2BE7B904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD6B190-1BAD-4F6C-BBD3-457D2BE7B904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD6B190-1BAD-4F6C-BBD3-457D2BE7B904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD6B190-1BAD-4F6C-BBD3-457D2BE7B904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0FB0766-BEA3-498A-8262-CA1F5E4634CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FB0766-BEA3-498A-8262-CA1F5E4634CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0FB0766-BEA3-498A-8262-CA1F5E4634CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0FB0766-BEA3-498A-8262-CA1F5E4634CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

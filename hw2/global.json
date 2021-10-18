@@ -1,0 +1,6 @@
+{
+    "msbuild-sdks": 
+    {
+      "Microsoft.NET.Sdk.IL": "3.0.0-preview-27318-01"
+    }
+}

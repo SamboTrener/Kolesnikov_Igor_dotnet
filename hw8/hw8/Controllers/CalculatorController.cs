@@ -1,22 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Globalization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace hw8.Controllers
 {
     public class CalculatorController : Controller
     {
-        private readonly Calculator calculator;
-
-        public CalculatorController(Calculator calculator)
+        public IActionResult Calculate([FromServices] ICalculator calculator, [FromServices] IParser parser,
+            string val1, string operation, string val2)
         {
-            this.calculator = calculator;
+            if (!parser.TryParseOrQuit(val1, out var val1Parsed) || !parser.TryParseOrQuit(val2, out var val2Parsed))
+            {
+                return BadRequest("WrongArgFormat");
+            }
+
+            if (parser.TryParseOperationOrQuit(operation, out var operationParsed))
+            {
+                return BadRequest("WrongOperationFormat");
+            }
+
+            return Content(calculator.Calculate(val1Parsed, operationParsed, val2Parsed).ToString(CultureInfo.InvariantCulture));
         }
-        
-        public double Add([FromServices] ICalculator calculator, double a, double b) => calculator.Add(a, b);
-
-        public double Subtract([FromServices] ICalculator calculator, double a, double b) => calculator.Subtract(a, b);
-
-        public double Multiply([FromServices] ICalculator calculator, double a, double b) => calculator.Multiply(a, b);
-
-        public double Divide([FromServices] ICalculator calculator, double a, double b) => calculator.Divide(a, b);
     }
 }

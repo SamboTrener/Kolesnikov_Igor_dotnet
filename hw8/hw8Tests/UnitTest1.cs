@@ -1,6 +1,5 @@
-using System;
-using hw8;
 using Xunit;
+using hw8;
 
 namespace hw8Tests
 {
@@ -16,7 +15,7 @@ namespace hw8Tests
         public void Add_Works(
             double a, double b, double expected)
         {
-            var result = calculator.Add(a, b);
+            var result = calculator.Calculate(a,Operation.Add, b);
             Assert.Equal(expected, result);
         }
         
@@ -28,7 +27,7 @@ namespace hw8Tests
         public void Subtract_Works(
             double a, double b, double expected)
         {
-            var result = calculator.Subtract(a, b);
+            var result = calculator.Calculate(a, Operation.Subtract, b);
             Assert.Equal(expected, result);
         }
         
@@ -40,7 +39,7 @@ namespace hw8Tests
         public void Multiply_Works(
             double a, double b, double expected)
         {
-            var result = calculator.Multiply(a, b);
+            var result = calculator.Calculate(a, Operation.Multiply, b);
             Assert.Equal(expected, result);
         }
         
@@ -52,7 +51,7 @@ namespace hw8Tests
         public void Divide_Works(
             double a, double b, double expected)
         {
-            var result = calculator.Divide(a, b);
+            var result = calculator.Calculate(a, Operation.Divide, b);
             Assert.Equal(expected, result);
         }
     }

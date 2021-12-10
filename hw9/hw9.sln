@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw9", "hw9.csproj", "{53895213-56D4-444B-8239-C65E391F7D75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw9", "hw9\hw9.csproj", "{83C4E5B7-46B8-422C-862F-E4BE64509EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw9Tests", "hw9Tests\hw9Tests.csproj", "{3361B9B5-829C-4E38-ADCB-EEE29C6419D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{53895213-56D4-444B-8239-C65E391F7D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53895213-56D4-444B-8239-C65E391F7D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53895213-56D4-444B-8239-C65E391F7D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53895213-56D4-444B-8239-C65E391F7D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C4E5B7-46B8-422C-862F-E4BE64509EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C4E5B7-46B8-422C-862F-E4BE64509EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C4E5B7-46B8-422C-862F-E4BE64509EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C4E5B7-46B8-422C-862F-E4BE64509EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3361B9B5-829C-4E38-ADCB-EEE29C6419D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3361B9B5-829C-4E38-ADCB-EEE29C6419D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3361B9B5-829C-4E38-ADCB-EEE29C6419D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3361B9B5-829C-4E38-ADCB-EEE29C6419D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

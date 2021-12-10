@@ -7,7 +7,7 @@ namespace hw9.Interfaces
     {
         public Expression ParseExpression(string stringToParse);
 
-        public void MakeBinaryExpression(Stack<Expression> stack, Stack<Operation> operationStack);
+        void MakeBinaryExpression(Stack<Expression> stack, Stack<Operation> operationStack);
 
         bool TryParseOperationOrQuit(string arg, out Operation operation);
     }

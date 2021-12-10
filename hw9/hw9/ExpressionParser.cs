@@ -35,10 +35,7 @@ namespace hw9
                 
                 if (numberBeforeParse != "")
                 {
-                    var doubledNumber = double.Parse(numberBeforeParse);
-                    stack.Push(Expression.Constant(doubledNumber,
-                        typeof(double))); //Сомнительная строка, потом проверить
-                    numberBeforeParse = "";
+                    numberBeforeParse = PushAndResetNumber(numberBeforeParse, stack);
                 }
                 
                 if (operation != Operation.None && operation != Operation.Lb)
@@ -67,9 +64,7 @@ namespace hw9
 
             if (numberBeforeParse != "")
             {
-                var doubledNumber = double.Parse(numberBeforeParse);
-                stack.Push(Expression.Constant(doubledNumber,
-                typeof(double)));
+                PushAndResetNumber(numberBeforeParse, stack);
             }
 
             while (operationStack.Count > 0)
@@ -78,6 +73,14 @@ namespace hw9
             }
 
             return stack.Pop();
+        }
+
+        private static string PushAndResetNumber(string numberBeforeParse, Stack<Expression> stack)
+        {
+            var doubledNumber = double.Parse(numberBeforeParse);
+            stack.Push(Expression.Constant(doubledNumber,
+                typeof(double)));
+            return "";
         }
 
         public void MakeBinaryExpression(Stack<Expression> stack, Stack<Operation> operationStack)

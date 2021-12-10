@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -18,7 +19,15 @@ namespace hw9
 
         public double Calculate(string expression)
         {
-            var expr = parser.ParseExpression(expression);
+            Expression expr;
+            try
+            {
+                expr = parser.ParseExpression(expression);
+            }
+            catch
+            {
+                throw new ArgumentException();
+            }
             var resultExpression = visitor.Visit(expr);
             var result = (double)((ConstantExpression)resultExpression).Value;
             return result;

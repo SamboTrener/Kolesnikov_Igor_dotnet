@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw10", "hw10\hw10.csproj", "{69A6AEB2-A587-4E9B-BBB1-E4DBB9DCD280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw10Tests", "hw10Tests\hw10Tests.csproj", "{A3469C6D-7EDB-43E2-9E7A-91FEBE8F4E19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69A6AEB2-A587-4E9B-BBB1-E4DBB9DCD280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A6AEB2-A587-4E9B-BBB1-E4DBB9DCD280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A6AEB2-A587-4E9B-BBB1-E4DBB9DCD280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A6AEB2-A587-4E9B-BBB1-E4DBB9DCD280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3469C6D-7EDB-43E2-9E7A-91FEBE8F4E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3469C6D-7EDB-43E2-9E7A-91FEBE8F4E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3469C6D-7EDB-43E2-9E7A-91FEBE8F4E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3469C6D-7EDB-43E2-9E7A-91FEBE8F4E19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

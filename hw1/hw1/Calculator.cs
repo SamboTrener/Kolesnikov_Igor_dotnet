@@ -2,7 +2,7 @@
 {
     internal static class Calculator
     {
-        internal static int Calculate(Program.Operation operation, int val1, int val2)
+        public static int Calculate(Program.Operation operation, int val1, int val2)
         {
             var result = 0;
             switch (operation)

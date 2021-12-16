@@ -26,7 +26,5 @@ namespace hw6Tests
 			var result = await response.Content.ReadAsStringAsync();
 			Assert.Equal(expected, result);
 		}
-		
-		
 	}
 } 

@@ -156,6 +156,15 @@ let configureServices (services : IServiceCollection) =
 let configureLogging (builder : ILoggingBuilder) =
     builder.AddConsole()
            .AddDebug() |> ignore
+           
+type Startup() =
+    member _.ConfigureServices (services : IServiceCollection) =
+        services.AddGiraffe() |> ignore
+
+    member _.Configure (app : IApplicationBuilder)
+                        (_ : IHostEnvironment)
+                        (_ : ILoggerFactory) =
+        app.UseGiraffe webApp
 
 [<EntryPoint>]
 let main args =

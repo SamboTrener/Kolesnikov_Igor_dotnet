@@ -1,6 +1,6 @@
 ﻿using System;
 using Xunit;
-using Hw1;
+using ProgramHw2;
 
 namespace Hw1Tests
 {

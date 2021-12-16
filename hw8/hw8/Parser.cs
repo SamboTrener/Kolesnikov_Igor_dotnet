@@ -31,9 +31,9 @@ namespace hw8
         bool IParser.TryParseOrQuit(string arg, out double val)
         {
             var isVal = double.TryParse(arg, out val);
-            if (isVal)
+            if (!isVal)
             {
-                Console.WriteLine($"Val is not int: {arg}");
+                Console.WriteLine($"Val is not double: {arg}");
             }
             return isVal;
         }

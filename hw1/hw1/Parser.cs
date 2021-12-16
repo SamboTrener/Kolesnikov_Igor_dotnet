@@ -2,7 +2,7 @@
 
 namespace Hw1
 {
-    class Parser
+    static class Parser
     {
         internal static bool TryParseOperationOrQuit(string arg, out Program.Operation operation)
         {

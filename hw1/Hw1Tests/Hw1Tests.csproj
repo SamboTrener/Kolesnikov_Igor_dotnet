@@ -20,6 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\hw2\ProgramHw2\ProgramHw2.csproj" />
       <ProjectReference Include="..\hw1\hw1.csproj" />
     </ItemGroup>
 

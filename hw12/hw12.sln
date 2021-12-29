@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw12", "hw12\hw12.csproj", "{696AB46C-D635-4A8B-9BF3-3DE194CE7058}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "hw6", "..\hw6\hw6\hw6\hw6.fsproj", "{FFC7DAA6-591A-42F3-B228-F5D0E5B604AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw8", "..\hw8\hw8\hw8.csproj", "{1DB73C1C-CC5B-4BB0-9627-AB517C50018A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{696AB46C-D635-4A8B-9BF3-3DE194CE7058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696AB46C-D635-4A8B-9BF3-3DE194CE7058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696AB46C-D635-4A8B-9BF3-3DE194CE7058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696AB46C-D635-4A8B-9BF3-3DE194CE7058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC7DAA6-591A-42F3-B228-F5D0E5B604AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC7DAA6-591A-42F3-B228-F5D0E5B604AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC7DAA6-591A-42F3-B228-F5D0E5B604AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC7DAA6-591A-42F3-B228-F5D0E5B604AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB73C1C-CC5B-4BB0-9627-AB517C50018A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB73C1C-CC5B-4BB0-9627-AB517C50018A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB73C1C-CC5B-4BB0-9627-AB517C50018A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB73C1C-CC5B-4BB0-9627-AB517C50018A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

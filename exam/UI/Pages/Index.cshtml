@@ -1,0 +1,83 @@
+﻿@page
+@using UI.Models
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h4>Создание персонажа</h4>
+<form method="post">
+    <label class="m-0" asp-for="CharacterModel.Name"></label>
+    <div class="mb-1">
+        <input class="form-control" asp-for="CharacterModel.Name">
+        <span class="text-danger" asp-validation-for="CharacterModel.Name"></span>
+    </div>
+
+    <label class="m-0" asp-for="CharacterModel.Damage"></label>
+    <div class="mb-1">
+        <input class="form-control" asp-for="CharacterModel.Damage">
+        <span class="text-danger" asp-validation-for="CharacterModel.Damage"></span>
+    </div>
+
+    <label class="m-0" asp-for="CharacterModel.ArmorClass"></label>
+    <div class="mb-1">
+        <input class="form-control" asp-for="CharacterModel.ArmorClass">
+        <span class="text-danger" asp-validation-for="CharacterModel.ArmorClass"></span>
+    </div>
+
+    <label class="m-0" asp-for="CharacterModel.AttackModifier"></label>
+    <div class="mb-1">
+        <input class="form-control" asp-for="CharacterModel.AttackModifier">
+        <span class="text-danger" asp-validation-for="CharacterModel.AttackModifier"></span>
+    </div>
+
+    <label class="m-0" asp-for="CharacterModel.DamageModifier"></label>
+    <div class="mb-1">
+        <input class="form-control" asp-for="CharacterModel.DamageModifier">
+        <span class="text-danger" asp-validation-for="CharacterModel.DamageModifier"></span>
+    </div>
+
+    <label class="m-0" asp-for="CharacterModel.HitPoints"></label>
+    <div class="mb-1">
+        <input class="form-control" value="@Model.CharacterModel?.HitPoints" asp-for="CharacterModel.HitPoints">
+        <span class="text-danger" asp-validation-for="CharacterModel.HitPoints"></span>
+    </div>
+
+    <label class="m-0" asp-for="CharacterModel.AttackPerRound"></label>
+    <div class="mb-1">
+        <input class="form-control" asp-for="CharacterModel.AttackPerRound">
+        <span class="text-danger" asp-validation-for="CharacterModel.AttackPerRound"></span>
+    </div>
+
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Отправить">
+    </div>
+</form>
+
+@if (Model.Game != null)
+{
+@if (Model.Game.Log != null)
+{
+@if (Model.Game.Log.Rounds != null)
+{
+@foreach (var round in Model.Game.Log.Rounds)
+{
+    <h3>Раунд № @round.Id</h3>
+    foreach (var attack in round.Attacks)
+    {
+        <h4>@attack.OwnerName</h4>
+        <p>Удар на @attack.AttackDrop + @attack.AttackModifier очков силы атаки</p>
+        if (@attack.IsAttack)
+        {
+            <p>Состоялся</p>
+            <p>Было нанесено @attack.DamageDrop урона</p>
+        }
+        else
+        {
+            <p>Не Состоялся</p>
+        }
+    }
+}
+}
+}
+}

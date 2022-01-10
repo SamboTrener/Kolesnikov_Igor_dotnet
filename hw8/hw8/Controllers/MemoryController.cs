@@ -2,12 +2,18 @@
 
 namespace hw8.Controllers
 {
+    
     public class MemoryController : Controller
     {
-        // GET
+        public static string str ="";
+        
         public IActionResult Index()
         {
-            return View();
+            for (int i = 0; i < 100; i++)
+            {
+                str = str + i.ToString();
+            }
+            return Ok();
         }
     }
 }

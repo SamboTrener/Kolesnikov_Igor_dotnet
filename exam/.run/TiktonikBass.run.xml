@@ -1,0 +1,8 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TiktonikBass" type="CompoundRunConfigurationType">
+    <toRun name="DB" type="LaunchSettings" />
+    <toRun name="UI" type="LaunchSettings" />
+    <toRun name="BusinessLogic" type="LaunchSettings" />
+    <method v="2" />
+  </configuration>
+</component>
